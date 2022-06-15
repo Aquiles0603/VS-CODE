@@ -1,0 +1,66 @@
+img {
+    border: dotted 4px black;
+}
+h1 {
+    text-align: center;}
+p {
+    text-decoration: underline;
+}
+ul {text-decoration: underline;
+}
+h1,h2 {
+    border: double 12px black;
+}
+h1 {
+    border-color: blue;
+}
+p {
+    text-align: left;
+}
+ul {
+    text-align: left;
+}
+strong {
+    text-align: left;
+}
+section {
+    text-align: center;
+}
+#Datospersonales {
+    background-image: url(../img/fondo\ verde\ claro.jpg);
+    background-repeat: no-repeat;
+    background-size: 1400px;
+    border-radius: 30px;
+    padding: 3px 20px 3px;
+    box-shadow: 3px 20px 3px ;
+    border-style: solid;
+    margin: 25px;
+}
+#Educación {
+    background-image: url(../img/fondo\ verde\ claro.jpg);
+    background-repeat: no-repeat;
+    background-size: 1400px;
+    border-radius: 30px;
+    padding: 3px 20px 3px;
+    box-shadow: 3px 20px 4px;
+    border-style: solid;
+    margin: 25px;
+}
+#CURRICULUM {
+    background-image: url(../img/Fondo\ rojo.jpg);
+}
+/*body {
+    background-image: url(../img/fondo\ azul.jpg);
+    box-shadow: 10px 4px 10px black;
+    padding: 3px 20px 3px;
+    border-style: solid;
+    background-repeat: no-repeat;
+    background-size: 4000px;
+
+}*/
+#Datospersonales h2 {
+    background-color: lightblue;
+}
+#Educación h2 {
+    background-color: lightblue;
+}

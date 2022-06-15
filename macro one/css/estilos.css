@@ -1,0 +1,26 @@
+section {text-align: left;}
+p {
+    text-align: left;
+}
+header {
+    background-color: lightblue; height: 50px;
+    text-align: center;
+}
+h1 {border: double 6px black;}
+body {
+    background-image: url(../img/fondo\ depa.jpg);
+    background-size: 500px;
+}
+h2 {text-align: center;}
+.TextoGrande {font-size: 24px;
+              color: red;  }
+.TextoGigante {
+    font-size: 24px;
+}
+#TextoGigante {
+    background-image: url(../img/fondo\ precio.jpg);
+    background-repeat: no-repeat;
+    background-size: 700px;
+    border-radius: 30px;
+    padding: 3px 200px;
+}

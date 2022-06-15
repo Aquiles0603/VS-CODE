@@ -1,0 +1,19 @@
+function preguntarNombreyApellido() {
+var nombre=prompt("Ingrese su nombre:");
+var apellido=prompt("Ingrese su apellido:");
+alert ("Hola Mundo Bienvenido "+nombre+" "+apellido)
+alert(`Hola tu nombre es ${nombre} y tu apellido es ${apellido}`);
+}
+function ponermayusculas(){
+    var datospersonales=document.getElementById("datos");
+    datospersonales.innerHTML="DATOS PERSONALES";
+    datospersonales.style.background="white";
+}
+function ColorUno(){
+    var ModoOscuro=document.getElementById("Oscuro");
+    ModoOscuro.style.background="grey";
+}
+function ColorDos(){
+    var ModoClaro=document.getElementById("Oscuro");
+    ModoClaro.style.background="white";
+}
