@@ -8,16 +8,85 @@
 </head>
 <body>
     <h1>Prueba de controles de formularios hmtl</h1>
+    <h3 id="h3ayuda"></h3>
     <hr/>
     <form action="../index.html" method="get">
         <label for="txtNombre">Nombre(TextBox):</label>
-        <input type="text" name="txtNombre" id="txtNombre" placeholder="Escriba su nombre aqui">
+        <input type="text" name="txtNombre" id="txtNombre" placeholder="Escriba su nombre aqui"
+        onfocus="cargarAyuda();">
         <br/>
-        <form action="../index.html" method="get">
-            <label for="txtApellido">Apellido(TextBox):</label>
-            <input type="text" name="txtApellido" id="txtApellido" placeholder="Escriba su apellido aqui">
-            <br/>
-        <input type="submit" value="Enviar">
+        
+        <label for="txtApellido">Apellido(TextBox):</label>
+        <input type="text" name="txtApellido" id="txtApellido" placeholder="Escriba su apellido aqui"
+        onfocus="cargarAyuda();">
+        <br/>
+
+        <label for="chkCasado">Casado(checkbox):</label>
+        <input type="checkbox" name="chkCasado" id="chkCasado">
+        <br/>
+
+        <label for="date">Fecha de Nacimiento(date):</label>
+        <input type="date" name="datFechaNacimiento" id="datFechaNacimiento">
+        <br/>
+
+        <label for="timHorarioTicket">Horario Ticket(time):</label>
+        <input type="time" name="timHorarioTicket" id="timHorarioTicket">
+        <br/>
+
+        <label for="dttHorarioTicket">Horario Ticket(datetime-local):</label>
+        <input type="datetime-local" name="dttHorarioTicket" id="dttHorarioTicket">
+        <br/>
+
+        <label for="txtPassword">Password(TextBox):</label>
+        <input type="password" name="txtPassword" id="txtPassword">
+        <br/>
+
+        <label for="txtEmail">Correo Electronico(TextBox):</label>
+        <input type="email" name="txtEmail" id="txtEmail" required>
+        <br/>
+        <!---->
+        <label for="cboLocalidad">Localidad(select)</label>
+        <select name="cboLocalidad" id="cboLocalidad">
+            <option value="San Justo">San Justo</option>
+            <option value="Gobernador Crespo">Gobernador Crespo</option>
+            <option value="Marcelino Escalada">Marcelino Escalada</option>
+            <option value="Videla">Videla</option>
+            <option value="San Javier">San Javier</option>
+        </select>
+        <br/>
+        
+        <input type="hidden" name="hidColor" value="black">
+        <br/>
+        <label for="btnLimpiar">Resetear Valores(reset)</label>
+        <input type="reset" name="btnLimpiar" value="Limpiar controles">
+        <br/>
+
+        <label for="numHijos">Cantidad de Hijos(number)</label>
+        <input type="number" name="numHijos" value="Ingrese cuantos hijos tiene">
+        <br/>
+
+        <label for="radSexoMasculino">Sexo</label>
+        <input type="radio" name="radSexoMasculino" id="radMasculino" value="Masculino"> Masculino
+        <br/>
+
+        <label for="radSexoFemenino">Sexo</label>
+        <input type="radio" name="radSexoMasculino" id="radFemenino" value="Femenino"> Femenino
+        <br/>
+
+        <label for="filDocumento">Documento(file)</label>
+        <input type="file" name="filDocumento" id="filDocumento">
+        <br/>
+
+        <label for="imgFoto">Imagen(image)</label>
+        <input type="image" name="imgFoto" id="imgFoto" src="../img/NCI_Visuals_Food_Hamburger.jpg" width="300px"> 
+        <br/>
+        
+        <label for="index">agregue una URl(url)</label>
+        <input type="url" name="index" id="index">
+        <br/>
+
+        <br/><input type="submit" value="Enviar">
     </form>
+    <script src="../js/codigo.js"></script>
 </body>
 </html>
