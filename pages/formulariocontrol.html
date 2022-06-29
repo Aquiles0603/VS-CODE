@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Controles de formularios HTML</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
 </head>
 <body>
     <h1>Prueba de controles de formularios hmtl</h1>
@@ -13,16 +14,17 @@
     <form action="../index.html" method="get">
         <label for="txtNombre">Nombre(TextBox):</label>
         <input type="text" name="txtNombre" id="txtNombre" placeholder="Escriba su nombre aqui"
-        onfocus="cargarAyuda();">
+        onfocus="cargarAyudaNombre();">
         <br/>
         
         <label for="txtApellido">Apellido(TextBox):</label>
         <input type="text" name="txtApellido" id="txtApellido" placeholder="Escriba su apellido aqui"
-        onfocus="cargarAyuda();">
+        onfocus="cargarAyudaApellido();">
         <br/>
 
         <label for="chkCasado">Casado(checkbox):</label>
-        <input type="checkbox" name="chkCasado" id="chkCasado">
+        <input type="checkbox" name="chkCasado" id="chkCasado"
+        onfocus="cargarAyudaEstadoCivil();">
         <br/>
 
         <label for="date">Fecha de Nacimiento(date):</label>
