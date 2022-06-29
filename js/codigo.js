@@ -8,7 +8,7 @@ function cargarAyudaApellido(){
     }
 function cargarAyudaEstadoCivil(){
         var h3=document.getElementById("h3ayuda");
-        h3.innerHTML="Seleccione su Estado Civil";
+        h3.innerHTML="Presione el cuadro para seleccionar o deseleccionar";
         }
 function preguntarNombreyApellido() {
 var nombre=prompt("Ingrese su nombre:");
