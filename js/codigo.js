@@ -9,7 +9,17 @@ function cargarAyudaApellido(){
 function cargarAyudaEstadoCivil(){
         var h3=document.getElementById("h3ayuda");
         h3.innerHTML="Presione el cuadro para seleccionar o deseleccionar";
-        }
+        } comentar
+function cargarAyuda(control){
+    var h3=document.getElementById("h3ayuda");
+    if (control.name=="txtNombre")
+        var mensaje="Ingrese su nombre con mayusculas"
+    if (control.name=="txtApellido")
+        var mensaje="Ingrese su apellido con mayusculas"
+    if (control.name=="chkCasado")
+        var mensaje="Presione el cuadro para selecciona o deseleccionar"
+    h3.innerHTML=mensaje;
+}
 function preguntarNombreyApellido() {
 var nombre=prompt("Ingrese su nombre:");
 var apellido=prompt("Ingrese su apellido:");
