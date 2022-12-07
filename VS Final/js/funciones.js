@@ -6,4 +6,3 @@ function Color2(){
     var ModoClaro1=document.getElementById("Oscuro2");
     ModoClaro1.style.background="grey";
 }
-
