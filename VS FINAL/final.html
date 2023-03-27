@@ -10,56 +10,78 @@
 </head>
 
 <body id="Oscuro2">
+    <nav>
+        <label for="" class="brand">
+            <a href="">VoleyWeb</a>
+        </label>
 
-<details>
-<div>
-    <ul><a href="#">Tus equipos favoritos</a></ul>
-    <ul><a href="#">Noticias</a></ul>
-    <ul><a href="#">Canales de emisión</a></ul>
-    <button onclick="Color1();">Modo Claro</button>
-        <button onclick="Color2();">Modo Oscuro</button>
-</div>
-</details>
-
-
-<header>
-    <h1>¡Bienvenidos a VoleyWeb!</h1>
-
-    <h2>Una pagina donde te mostraremos las nuevas noticias de la Liga Argentina de Voley</h2>
-</header>
-
-    <div>
-        <p>
-            <h3>
-                TUS EQUIPOS FAVORITOS
-            </h3>
         <ul>
-            <img src="img/logo-voley-2018-400x378-250x250.png" alt="UPCN (San Juan)" width="200" height="200">
-            <img src="img/iso.png" alt="Once Unidos (Mar del Plata)" width="200" height="200">
-            <img src="img/phpDpl9Vr_1636814315.png" alt="Monteros (Tucuman)" width="200" height="200">
-            <img src="img/logo.png" alt="Defensores de Banfield (B.s A.s)" width="200" height="200">
-            <img src="img/php0CbKZD_1603386555.png" alt="Paracao (Entre Rios)" width="200" height="200">
-            <img src="img/phpnPDRVq_1504181017.png" alt="Ciudad (B.s A.s)" width="200" height="200">
-            
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#clubes">Clubes</a></li>
+            <li><a href="#noticias" class="selected">Noticias</a></li>
+            <li><a href="#redes" class="selected">Redes sociales</a></li>
         </ul>
-        </div>
-        <div>
-            <p>
-                <h3>
-                    CANALES DE EMISION
-                </h3>
-                
-                    <img src="img/FOX_Sports_(Argentina)_Logo_2022.png" alt="Fox Sports" width="250" height="200">
-                    <img src="img/72027_tyc.png" alt="TyC Sports" width="250" height="200">
-                    <img src="img/ESPN-Logo-1.png" alt="ESPN" width="250" height="200">
-                    <img src="img/YouTube-logo.png" alt="Youtube" width="250" height="200">
-        </div>
-            
+    </nav>
+    <div>
+        <button onclick="Color1();" style="padding-top: 15vh;">Modo Claro</button>
+        <button onclick="Color2();" style="padding-top: 15vh;">Modo Oscuro</button>
+    </div>
+<section>
+<div>
+    <h3 class="clubes" id="clubes">TUS EQUIPOS FAVORITOS</h3>
+</div>
 
-            
-            <h3>
+        
+    <div class="contenedor">
+        
+        <figure>
+            <img src="img/logo-voley-2018-400x378-250x250.png" alt="" width="200" height="200">
+            <div class="capa">
+                <h4>UPCN (San Juan)</h4>
+                <p>UPCN San Juan Vóley es un equipo de voleibol perteneciente a la ciudad de San Juan en la provincia de San Juan, Argentina. Fue fundado en 2007 y su equipo masculino participa en la Liga Argentina de Voleibol.</p>
+
+            </div>
+        </figure>
+        <figure>
+            <img src="img/phpDpl9Vr_1636814315.png" alt="" width="200" height="200">
+            <div class="capa">
+                <h4>Monteros (Tucuman)</h4>
+                <p>Monteros Vóley Club es una institución deportiva de la ciudad de Monteros, en la provincia de Tucumán, fundada en 1984​ y que se destaca en voleibol, deporte en el cual su equipo masculino disputa en la Liga de Voleibol Argentina.</p>
+                
+            </div>
+        </figure>
+        <figure>
+            <img src="img/logo.png" alt="" width="200" height="200">
+            <div class="capa">
+                <h4>Defensores de Banfield (B.s A.s)</h4>
+                <p>Club Defensores de Banfield de la ciudad de Banfield, en la provincia de Bs As, fundado en 1896, destaca por la variedad de deportes, sobretodo voleibol, deporte en el cual su equipo masculino disputa en la Liga de Voleibol Argentina.</p>
+                
+            </div>
+        </figure>
+        <figure>
+            <img src="img/php0CbKZD_1603386555.png" alt="" width="200" height="200">
+            <div class="capa">
+                <h4>Paracao (Entre Rios)</h4>
+                <p>El club Atlético Paracao es la institución deportiva mas antigua de Paraná, Entre Rios, fundado en 1890. Actualmente su participacion en la Liga de Voley Argentina es una relevancia para muchos. </p>
+                
+            </div>
+        </figure>
+        <figure>
+            <img src="img/phpnPDRVq_1504181017.png" alt="" width="200" height="200">
+            <div class="capa">
+                <h4>Ciudad (B.s A.s)</h4>
+                <p>El Club Ciudad fundado en 1920, provincia de Bs As, está debutando contra los mejores clubes de voley de la Liga Argentina de Voley. </p>
+                
+            </div>
+        </figure>
+    </div>
+</section>
+
+<section>
+            <h3 class="noticias" id="noticias">
                 NOTICIAS
             </h3>
+        
             <div class="carrousel">
                 <div class="conteCarrousel">
                     <div class="itemCarrousel" id="itemCarrousel-1">
@@ -111,10 +133,9 @@
                     <a href="#itemCarrousel-2">___</a>
                     <a href="#itemCarrousel-3">___</a>
                 </div>
-            </div>
-
+</section>
 <header>
-    <p><strong> VISITANOS TAMBIEN EN </strong></p>
+    <p class="redes" id="redes"><strong> VISITANOS TAMBIEN EN </strong></p>
     
     <div class="wrapper">
 
@@ -148,7 +169,6 @@
 
     </div>
 </header>
-
 <script type="text/Javascript" src="js/funciones.js">
 <script type="text/Javascript"></script>
 
