@@ -278,7 +278,12 @@ h3{
 #itemCarrousel-3{
     background-color: rgb(200, 226, 50);
 }
-
+#itemCarrousel-4{
+    background-color: rgb(81, 99, 255);
+}
+#itemCarrousel-5{
+    background-color: rgb(233, 76, 76);
+}
 .conteCarrouselController{
     width: 100%;
     display: flex;
@@ -303,4 +308,58 @@ i{
     border-radius: 50%;
     padding: 15px;
     transition: .3s ease;
+}
+
+.contenedor-acordeon{
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    margin-top: 80px;
+}
+.contenedor-acordeon h2{
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 35px;
+}
+.acordeon{
+    background: #fff;
+}
+.acordeon label{
+    display: block;
+    padding: 20px;
+    font-size: 20px;
+    background: #2d9ddf;
+    color: black;
+    cursor: pointer;
+    margin-bottom: 2px;
+    transition: all 300ms ease;
+}
+.acordeon label:hover{
+    background: #1b2aff;
+}
+.acordeon .contenido-acordeon{
+    padding: 0px;
+    margin: 0px 20px;
+    max-height: 0px;
+    overflow: hidden;
+    transition: all 300ms ease;
+}
+.btn-acordeon:checked ~ .contenido-acordeon{
+    max-height: 600px;
+    padding: 15px 0px;
+}
+.btn-acordeon{
+    display: none;
+}
+
+.p{
+    color: black;
+    padding: 20px;
+    font-size: 20px;
+    text-align: left;
+}
+
+.li{
+    padding: 20px;
+    font-size: 20px;
 }

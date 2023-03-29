@@ -10,16 +10,22 @@
 </head>
 
 <body id="Oscuro2">
+    
     <nav>
         <label for="" class="brand">
             <a href="">VoleyWeb</a>
         </label>
+
 
         <ul>
             <li><a href="#">Inicio</a></li>
             <li><a href="#clubes">Clubes</a></li>
             <li><a href="#noticias" class="selected">Noticias</a></li>
             <li><a href="#redes" class="selected">Redes sociales</a></li>
+            <form class="d-flex" role="buscar" style="margin-top: -16vh;">
+                <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
+                <button class="btn btn-outline-success" type="submit" style="background-color: green;">Buscar</button>
+            </form>
         </ul>
     </nav>
     <div>
@@ -28,6 +34,64 @@
     </div>
 <section>
 <div>
+    <h3 class="inicio" id="inicio">¡BIENVENIDOS!</h3>
+</div>
+
+<div class="contenedor-acordeon">
+    <div class="acordeon">
+        <input type="radio" name="acordeon" id="btn-acordeon1" class="btn-acordeon">
+        <label for="btn-acordeon1">
+            Info
+        </label>
+        <div class="contenido-acordeon">
+            <p class="p"> <li>VoleyWeb fue creado con el proposito de mantenerte al tanto sobre tus equipos favoritos de la Liga de Voley Argentina. Actualmente solo contamos con una muy baja variedad de equipos de la Liga, pero a medida de que pasen las temporadas iremos trayendo mas equipos en esta y sus novedades. </li>
+            </p>
+        </div>
+    </div>
+    <div class="acordeon">
+     <input type="radio" name="acordeon" id="btn-acordeon2" class="btn-acordeon">
+     <label for="btn-acordeon2">
+         Galeria
+     </label>
+     <div class="contenido-acordeon">
+         <img src="img/conte-saltando-1170x780.jpg" alt="" width="200"  height="200"> <img src="img/355941191ea0c7b016472589996c98a7.jpg" alt="" width="200" height="200"> <img src="img/IMG_1988-1170x780.jpg" alt="" width="200" height="200"> <img src="img/sv-3-1170x780.jpg" alt="" width="200" height="200"> <img src="img/7934.png" alt="" width="200" height="200"> <img src="img/1510847987-voleyok-1200x519.jpg" alt="" width="200" height="200">
+     </div>
+ </div>
+ <div class="acordeon">
+     <input type="radio" name="acordeon" id="btn-acordeon3" class="btn-acordeon">
+     <label for="btn-acordeon3">
+         Usuarios
+     </label>
+     <div class="contenido-acordeon">
+                <li class="li"><a>Franco</a></li>
+                <li class="li"><a>Maximo</a></li>
+                <li class="li"><a>Antonio</a></li>
+                <li class="li"><a>Nicolas</a></li>
+                <li class="li"><a>Mateo</a></li>
+                <li class="li"><a>Ezequiel</a></li>
+     </div>
+ </div>
+
+ <div class="acordeon">
+    <input type="radio" name="acordeon" id="btn-acordeon4" class="btn-acordeon">
+    <label for="btn-acordeon4">
+        Canales de Emision
+    </label>
+    <div class="contenido-acordeon">
+        <li class="li"><a href="https://www.tycsports.com/">TycSports</a></li> <a><img src="img/72027_tyc.png" alt="" width="200" height="100"></a>
+        <li class="li"><a href="https://www.espn.com.ar/">ESPN</a></li> <a><img src="img/ESPN-Logo-1.png" alt="" width="200" height="100"></a>
+        <li class="li"><a href="https://foxsports.com.ar/">Fox Sports</a></li> <a><img src="img/FOX_Sports_(Argentina)_Logo_2022.png" alt="" width="200" height="100"></a>
+        <li class="li"><a href="https://www.starplus.com/es-ar/welcome/stream">Star Plus</a></li> <a><img src="img/1621003594_DSNY_STAR+_LOGO_DARK_RGB.png" alt="" width="200" height="100"></a>
+    </div>
+</div>
+
+
+</div>
+
+
+
+<section>
+<div style="margin-top: 15vh;">
     <h3 class="clubes" id="clubes">TUS EQUIPOS FAVORITOS</h3>
 </div>
 
@@ -87,11 +151,11 @@
                     <div class="itemCarrousel" id="itemCarrousel-1">
                         <div class="itemCarrouselTarjeta">
                             <a>LVA: Defensores, Paracao y Once Unidos volvieron al triunfo; Ciudad, imparable</a>
-                            <img src="img/sv-3-1170x780.jpg" alt="2000px" width="500px" >
+                            <img src="img/sv-3-1170x780.jpg" alt="" width="500px" height="200">
 
                         </div>
                         <div class="itemCarrouselArrows">
-                            <a href="#itemCarrousel-3">
+                            <a href="#itemCarrousel-5">
                                 <i> ◀</i>
                             </a>
                             <a href="#itemCarrousel-2">
@@ -102,28 +166,56 @@
                     <div class="itemCarrousel" id="itemCarrousel-2">
                         <div class="itemCarrouselTarjeta">
                             <a>UPCN sufrió, Defe, Paracao y San Lorenzo contundentes.</a>
-                            <img src="img/IMG_1988-1170x780.jpg" alt="2000px" width="500px" >
+                            <img src="img/IMG_1988-1170x780.jpg" alt="" width="500px" height="200">
                         </div>
                         <div class="itemCarrouselArrows">
                             <a href="#itemCarrousel-1">
                                 <i>◀</i>
                             </a>
                             <a href="#itemCarrousel-3">
-                                <i >▶</i>
+                                <i>▶</i>
                             </a>
                         </div>
                     </div>
                     <div class="itemCarrousel" id="itemCarrousel-3">
                         <div class="itemCarrouselTarjeta">
                             <a>¡Finalizó el primer Tour a puros partidazos!</a>
-                            <img src="img/conte-saltando-1170x780.jpg" alt="2000px" width="500px" >
+                            <img src="img/conte-saltando-1170x780.jpg" alt="" width="500px" height="200">
                         </div>
                         <div class="itemCarrouselArrows">
                             <a href="#itemCarrousel-2">
                                 <i>◀</i>
                             </a>
+                            <a href="#itemCarrousel-4">
+                                <i>▶</i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="itemCarrousel" id="itemCarrousel-4">
+                        <div class="itemCarrouselTarjeta">
+                            <a>¡Defensores está que arde en su primer partido contra Ciudad!</a>
+                            <img src="img/ciudad-voley-_862x485.jpg" alt="" width="500px" height="200">
+                        </div>
+                        <div class="itemCarrouselArrows">
+                            <a href="#itemCarrousel-3">
+                                <i>◀</i>
+                            </a>
+                            <a href="#itemCarrousel-5">
+                                <i>▶</i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="itemCarrousel" id="itemCarrousel-5">
+                        <div class="itemCarrouselTarjeta">
+                            <a>¡Paracao no pudo ante el poderio de Monteros en su 5ta fecha!</a>
+                            <img src="img/paracao vs monteros.png" alt="" width="500px" height="200">
+                        </div>
+                        <div class="itemCarrouselArrows">
+                            <a href="#itemCarrousel-4">
+                                <i>◀</i>
+                            </a>
                             <a href="#itemCarrousel-1">
-                                <i >▶</i>
+                                <i>▶</i>
                             </a>
                         </div>
                     </div>
@@ -132,10 +224,14 @@
                     <a href="#itemCarrousel-1">___</a>
                     <a href="#itemCarrousel-2">___</a>
                     <a href="#itemCarrousel-3">___</a>
+                    <a href="#itemCarrousel-4">___</a>
+                    <a href="#itemCarrousel-5">___</a>
                 </div>
 </section>
+
+
 <header>
-    <p class="redes" id="redes"><strong> VISITANOS TAMBIEN EN </strong></p>
+    <p class="redes" id="redes" ><strong> VISITANOS TAMBIEN EN </strong></p>
     
     <div class="wrapper">
 
