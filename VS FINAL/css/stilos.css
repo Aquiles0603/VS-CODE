@@ -219,11 +219,6 @@ h3{
 .wrapper .instagram:hover .tooltip:before{
     background: #e1306c;
   }
-.wrapper .github:hover span,
-.wrapper .github:hover .tooltip,
-.wrapper .github:hover .tooltip:before{
-    background: #333;
-  }
 .wrapper .youtube:hover span,
 .wrapper .youtube:hover .tooltip,
 .wrapper .youtube:hover .tooltip:before{
@@ -240,46 +235,53 @@ i{
     transition: .3s ease;
 }
 
-.contenedor-acordeon{
-    width: 100%;
-    max-width: 800px;
-    margin: auto;
-    margin-top: 80px;
-}
-.contenedor-acordeon h2{
-    text-align: center;
-    font-size: 40px;
-    margin-bottom: 35px;
-}
 .acordeon{
-    background: #fff;
+    max-width: 800px;
+    position: center;
 }
-.acordeon label{
-    display: block;
-    padding: 20px;
-    font-size: 20px;
-    background: #2d9ddf;
-    color: black;
+.acordeon .contentBx{
+    position: relative;
+    margin: 10px 20px;
+    
+}
+.acordeon .contentBx .label{
+    position: relative;
+    padding: 10px;
+    background-color: rgb(39, 155, 223);
+    color: white;
     cursor: pointer;
-    margin-bottom: 2px;
-    transition: all 300ms ease;
 }
-.acordeon label:hover{
-    background: #1b2aff;
+.acordeon .contentBx .label::before{
+    content: '+';
+    position: center;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    font-size: 1.5em;
 }
-.acordeon .contenido-acordeon{
-    padding: 0px;
-    margin: 0px 20px;
-    max-height: 0px;
+.acordeon .contentBx.active .label::before{
+    content: "-";
+
+}
+.acordeon .contentBx .content{
+    position: relative;
+    background: white;
+    height: 0;
     overflow: hidden;
-    transition: all 300ms ease;
+    transition: 0.5s;
+    overflow-y: auto;
+
 }
-.btn-acordeon:checked ~ .contenido-acordeon{
-    max-height: 600px;
-    padding: 15px 0px;
+
+.acordeon .contentBx.active .content{
+    height: 150px;
+    padding: 10px;
 }
-.btn-acordeon{
-    display: none;
+.li{
+    text-decoration: none;
+}
+.acordeon .label:hover{
+    background: #1b2aff;
 }
 
 .p{
@@ -312,3 +314,5 @@ i{
     padding: 20px;
     font-size: 25px;
 }
+
+
