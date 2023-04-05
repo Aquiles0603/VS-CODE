@@ -21,7 +21,7 @@
         <ul>
             <li><a href="#">Inicio</a></li>
             <li><a href="#clubes">Clubes</a></li>
-            <li><a href="D:\Mis cosas\Documentos\VS CODE\VS FINAL\estadisticas.html" class="selected">Estadisticas</a></li>
+            <li><a href="../VS FINAL/estadisticas.html" class="selected">Estadisticas</a></li>
             <li><a href="#noticias" class="selected">Noticias</a></li>
             <li><a href="#redes" class="selected">Redes sociales</a></li>
         </ul>
@@ -193,16 +193,59 @@
 <section style="margin-top: 7vh;">
 <header>
     <p class="estrellas">¿Qué tal tu experiencia?</p>
-<div class="star_rating">
+    <form>
+        <p class="clasificacion">
+          <input id="radio1" type="radio" name="estrellas" value="5">
+            <label for="radio1" class="label">★</label>
+            <input id="radio2" type="radio" name="estrellas" value="4">
+            <label for="radio2" class="label">★</label>
+            <input id="radio3" type="radio" name="estrellas" value="3">
+            <label for="radio3" class="label">★</label>
+            <input id="radio4" type="radio" name="estrellas" value="2">
+            <label for="radio4"class="label">★</label>
+            <input id="radio5" type="radio" name="estrellas" value="1">
+            <label for="radio5" class="label">★</label>
+        </p>
+      </form>
+</header>
 
-    <button class="star">&#9734;</button>
-    <button class="star">&#9734;</button>
-    <button class="star">&#9734;</button>
-    <button class="star">&#9734;</button>
-    <button class="star">&#9734;</button>
+
+
+
+<div class="container" style="margin-top: 4vh;">
+
+
+
+<div class="col-md-6 pane">
+<div class="col-md-4">
+    <div class="alert alert-light" style="margin: auto;"><h4>Comentarios</h4></div>
+    </div>
+    <div id="result">
+
+
+
 
 </div>
-</header>
+
+<div class="col-md-8">
+<form>
+    <div class="form-group">
+    <label>Nombre</label>
+    <input class="form-control" type="text"  id="name">
+    </div>
+    <div class="form-group">
+    <label>Comentario</label>
+    <textarea id="comment" class="form-control"></textarea></label>
+    </div>
+    <button type="button" class="btn btn-primary" onclick="commentBox();">Enviar</button>
+</form>
+</div>
+
+
+
+
+
+
 </section>
 <header style="margin-top: 15vh;">
     <p class="redes" id="redes" ><strong> VISITANOS TAMBIEN EN </strong></p>
@@ -233,6 +276,7 @@
            <span><i class="fab fa-youtube"></i></span>
         </div>
     </div>
+    <p class="redes" id="redes" style="text-align: right;"><strong> @Copyright 2023 •Privacy Policy •Legal </strong></p>
 </header>
 
 

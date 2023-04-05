@@ -7,29 +7,39 @@ function Color2(){
     ModoClaro1.style.background="black";
 }
 
-const allStars = document.querySelectorAll('.star');
-let current_rating = document.querySelector('.current-rating');
-allStars.forEach((star, i) =>{
-    star.onclick = function(){
-        let current_star_level = i + 1;
-        current_rating.innerText = `${current_star_level}of 5`;
-
-        allStars.forEach((star,j)=>{
-            if( current_star_level >= j+1)
-            {
-                star.innerHTML = '&#9733';
-                
-            }else{
-                star.innerHTML = '&#9734';
-            }
-            5 >= 1,2,3,4,5
-        })
-    }
-})
 
 const acordeon = document.getElementsByClassName('contentBx');
 for (i = 0; i<acordeon.length; i++){
     acordeon[i].addEventListener('click', function(){
         this.classList.toggle('active')
     })
+}
+
+
+function commentBox(){
+	var name=document.getElementById('name').value;
+	var comment=document.getElementById('comment').value;
+ 
+	if(name =="" || comment ==""){
+		alert("Se requiere un nombre para comentar!");
+	}else{
+		var parent=document.createElement('div');
+		var el_name=document.createElement('h5');
+		var el_message=document.createElement('p');
+		var el_line=document.createElement('hr');
+		var txt_name=document.createTextNode(name);
+		var txt_message=document.createTextNode(comment);
+		el_name.appendChild(txt_name);
+		el_message.appendChild(txt_message);
+		el_line.style.border='1px solid #000';
+		parent.appendChild(el_name);
+		parent.appendChild(el_line);
+		parent.appendChild(el_message);
+		parent.setAttribute('class', 'pane');
+		document.getElementById('result').appendChild(parent);
+ 
+		document.getElementById('name').value="";
+		document.getElementById('comment').value="";
+	}
+ 
 }
