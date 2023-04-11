@@ -55,6 +55,7 @@ p{
 }
 
 
+
 .contenedor{
     width: 100%;
     display: flex;
@@ -274,7 +275,7 @@ i{
 }
 
 .acordeon .contentBx.active .content{
-    height: 150px;
+    height: 250px;
     padding: 10px;
 }
 .li{
@@ -343,3 +344,7 @@ input[type="radio"]:checked ~ .label {
 .container{
     background: slategray;
 }
+
+
+
+
