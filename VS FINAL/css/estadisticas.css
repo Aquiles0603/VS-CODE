@@ -187,6 +187,7 @@ table, th, td {
 
 .paginacion ul li a:hover {
 	background:#037E8C;
+    transition: all ease 500ms;
 }
 
 .paginacion ul li .active {

@@ -12,7 +12,7 @@ h2 {text-align: center;
 nav {
     width: 100%;
     height: 15vh;
-    background-color: blue;
+    background-color: rgb(36, 36, 238);
     position: fixed;
 }
 
@@ -137,94 +137,39 @@ h3{
     padding-top: 3vh;
 }
 
-.wrapper{
-    display: inline-flex;
-  }
-.wrapper .icon{
-    margin: 0 20px;
-    text-align: center;
-    cursor: pointer;
+.conte{
     display: flex;
-    align-items: center;
     justify-content: center;
-    flex-direction: column;
-    position: relative;
-    z-index: 2;
-    transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  }
-.wrapper .icon span{
-    display: block;
-    height: 60px;
-    width: 60px;
-    background: #fff;
-    border-radius: 50%;
-    position: relative;
-    z-index: 2;
-    box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
-    transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  }
-.wrapper .icon span i{
-    line-height: 60px;
-    font-size: 25px;
-  }
-.wrapper .icon .tooltip{
-    position: absolute;
-    top: 0;
-    z-index: 1;
-    background: #fff;
-    color: #fff;
-    padding: 10px 18px;
-    font-size: 20px;
-    font-weight: 500;
-    border-radius: 25px;
-    opacity: 0;
-    pointer-events: none;
-    box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
-    transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  }
-.wrapper .icon:hover .tooltip{
-    top: -70px;
-    opacity: 1;
-    pointer-events: auto;
-  }
-.icon .tooltip:before{
-    position: absolute;
-    content: "";
-    height: 15px;
-    width: 15px;
-    background: #fff;
-    left: 50%;
-    bottom: -6px;
-    transform: translateX(-50%) rotate(45deg);
-    transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  }
-.wrapper .icon:hover span{
-    color: #fff;
-  }
-.wrapper .icon:hover span,
-.wrapper .icon:hover .tooltip{
-    text-shadow: 0px -1px 0px rgba(0,0,0,0.4);
-  }
-.wrapper .facebook:hover span,
-.wrapper .facebook:hover .tooltip,
-.wrapper .facebook:hover .tooltip:before{
-    background: #3B5999;
-  }
-.wrapper .twitter:hover span,
-.wrapper .twitter:hover .tooltip,
-.wrapper .twitter:hover .tooltip:before{
-    background: #46C1F6;
-  }
-.wrapper .instagram:hover span,
-.wrapper .instagram:hover .tooltip,
-.wrapper .instagram:hover .tooltip:before{
-    background: #e1306c;
-  }
-.wrapper .youtube:hover span,
-.wrapper .youtube:hover .tooltip,
-.wrapper .youtube:hover .tooltip:before{
-  background: red;
-  }
+    gap: 10px;
+}
+
+.conte a{
+    font-size: 30px;
+}
+
+.facebook{
+    color: blue;
+    transition: all ease 500ms;
+}
+
+.twitter{
+    color: aqua;
+    transition: all ease 500ms;
+}
+
+.instagram{
+    color: #e9184d;
+    transition: all ease 500ms;
+}
+
+.youtube{
+    color: red;
+    transition: all ease 500ms;
+}
+
+.conte a:hover{
+    transform: scale(2);
+}
 
 i{
     text-align: center;
@@ -302,6 +247,7 @@ i{
     color: white;
     padding: 20px;
     font-size: 25px;
+    transition: all ease 500ms;
 }
 
 
@@ -327,22 +273,30 @@ input[type="radio"] {
 .label {
     color: grey;
   }
+.label1 {
+    color: grey;
+    transform: scale(1.5);
+  }
   
 .clasificacion {
     direction: rtl;
     unicode-bidi: bidi-override;
   }
   
-.label:hover,
-.label:hover ~ .label {
+.label1:hover,
+.label1:hover ~ .label1{
     color: orange;
+    transform: scale(2);
+
   }
   
-input[type="radio"]:checked ~ .label {
+input[type="radio"]:checked ~ .label1 {
     color: orange;
+    transform: scale(2);
+
   }
 .container{
-    background: slategray;
+    background: rgb(84, 89, 105);
 }
 
 
