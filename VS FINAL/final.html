@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="../VS FINAL/css/bootstrap.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="icon" href="img/unnamed.png">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body id="Oscuro2">
@@ -41,11 +42,12 @@
         <button onclick="Color2();" style="padding-top: 15vh;">Modo Oscuro</button>
     </div>
 <section>
-<div>
-    <h3 class="inicio" id="inicio">¡BIENVENIDOS!</h3>
-</div>
 
-<div class="acordeon" >
+    <div data-aos="fade-up">
+        <h3 id="inicio">¡BIENVENIDOS!</h3>
+    </div>
+
+<div class="acordeon" data-aos="fade-up">
     <div class="contentBx">
         <div class="label"><i class="fa-solid fa-info"></i>Info</div>
         <div class="content">
@@ -54,7 +56,7 @@
         </div>
     </div>
 </div>
-<div class="acordeon">
+<div class="acordeon" data-aos="fade-up">
     <div class="contentBx">
         <div class="label"><i class="fa-regular fa-image"></i>Galeria</div>
         <div class="content">
@@ -67,7 +69,7 @@
         </div>
     </div>
 </div>
-<div class="acordeon">
+<div class="acordeon" data-aos="fade-up">
     <div class="contentBx">
         <div class="label"><i class="fa-regular fa-user"></i>Usuarios</div>
         <div class="content">
@@ -80,7 +82,7 @@
         </div>
     </div>
 </div>
-<div class="acordeon">
+<div class="acordeon" data-aos="fade-up">
     <div class="contentBx">
         <div class="label"><i class="fa-solid fa-tv"></i>Canales de emision</div>
         <div class="content">
@@ -95,12 +97,12 @@
 
 
 <section>
-<div style="margin-top: 15vh;">
+<div style="margin-top: 15vh;" data-aos="fade-up">
     <h3 class="clubes" id="clubes">TUS EQUIPOS FAVORITOS</h3>
 </div>
 
         
-    <div class="contenedor">
+    <div class="contenedor" data-aos="fade-up">
         
         <figure>
             <img src="img/logo-voley-2018-400x378-250x250.png" alt="" width="200" height="200" >
@@ -145,7 +147,7 @@
     </div>
 </section>
 
-<section>
+<section data-aos="fade-up">
             <h3 class="noticias" id="noticias" style="margin-top: 15vh;">
                 NOTICIAS
             </h3>
@@ -206,8 +208,8 @@
               </div>
 </section>
 
-<section style="margin-top: 7vh;">
-<header>
+<section style="margin-top: 7vh;" >
+<header data-aos="fade-up">
     <p class="estrellas">¿Qué tal tu experiencia?</p>
     <form>
         <p class="clasificacion">
@@ -260,7 +262,7 @@
 
 
 </section>
-<header style="height: 155px;">
+<header style="height: 155px;" data-aos="fade-up">
     <p class="redes" id="redes" ><strong> VISITANOS TAMBIEN EN </strong></p>
     
     <div class="conte">
@@ -286,6 +288,10 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.min.js" integrity="sha384-heAjqF+bCxXpCWLa6Zhcp4fu20XoNIA98ecBC1YkdXhszjoejr5y9Q77hIrv8R9i" crossorigin="anonymous"></script>
 <script type="text/Javascript" src="js/funciones.js">
 <script type="text/Javascript"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"> </script>
+<script>
+    AOS.init();
+</script>
 
 </body>
 </html>

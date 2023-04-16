@@ -194,3 +194,13 @@ table, th, td {
 	background:#037E8C;
 	font-weight:bold;
 }
+
+::-webkit-scrollbar{
+    width: 12px;
+    border: 1px solid rgb(39, 155, 223);
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #1a25bebd;
+    border-radius: 6px;
+}
