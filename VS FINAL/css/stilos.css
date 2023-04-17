@@ -9,39 +9,7 @@ h2 {text-align: center;
     list-style: none;
     text-decoration: none;
 }
-nav {
-    width: 100%;
-    height: 15vh;
-    background-color: rgb(36, 36, 238);
-    position: fixed;
-}
 
-.brand{
-    margin-left: 5%;
-    line-height: 15vh;
-    font-size: 35px;
-}
-.brand a {
-    color: white;
-    text-decoration: none;
-}
-
-ul{
-    float: right;
-    margin-right: 5%;
-}
-
-nav ul li {
-    display: inline-block;
-    line-height: 15vh;
-}
-
-nav ul li a{
-    color: white;
-    font-size: 20px;
-    margin-left: 20px;
-    text-decoration: none;
-}
 
 header{
     background: rgb(34, 34, 245);
@@ -311,6 +279,36 @@ input[type="radio"]:checked ~ .label1 {
     border-radius: 6px;
 }
 
+nav {
+    width: 100%;
+    height: 15vh;
+    background-color: rgb(36, 36, 238);
+    position: fixed;
+}
 
+.brand{
+    margin-left: 5%;
+    line-height: 15vh;
+    font-size: 35px;
+}
+.brand a {
+    color: white;
+    text-decoration: none;
+}
 
+ul{
+    float: right;
+    margin-right: 5%;
+}
 
+nav ul li {
+    display: inline-block;
+    line-height: 15vh;
+}
+
+nav ul li a{
+    color: white;
+    font-size: 20px;
+    margin-left: 20px;
+    text-decoration: none;
+}

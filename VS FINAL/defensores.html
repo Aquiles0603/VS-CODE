@@ -9,6 +9,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
     <link rel="stylesheet" href="../VS FINAL/css/bootstrap.css">
     <link rel="icon" href="img/unnamed.png">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <div class="tabla-posiciones">
@@ -32,7 +33,7 @@
                 <li><a href="../VS FINAL/defensores.html" class="active">5</a></li>
             </ul>
     </section>
-        <table>
+        <table data-aos="fade-up">
             <tr class="encabezados">
               <th>Nombre</th>
               <th>Nº</th>
@@ -113,7 +114,10 @@
           </table>
 
     </div>
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"> </script>
+    <script>
+        AOS.init();
+    </script>
 
 </body>
 </html>
