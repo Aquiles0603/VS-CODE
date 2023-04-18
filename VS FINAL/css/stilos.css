@@ -275,40 +275,89 @@ input[type="radio"]:checked ~ .label1 {
 }
 
 ::-webkit-scrollbar-thumb{
-    background-color: #1a25bebd;
+    background-color: #1927ecbd;
     border-radius: 6px;
 }
 
 nav {
     width: 100%;
-    height: 15vh;
-    background-color: rgb(36, 36, 238);
-    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1335df;
+    padding-left: 2vw;
 }
 
-.brand{
-    margin-left: 5%;
-    line-height: 15vh;
-    font-size: 35px;
-}
-.brand a {
-    color: white;
+.logo-danicodex{
     text-decoration: none;
+    color: #fff;
+    padding-left: 20px;
+    font-size: 40px;
 }
 
-ul{
-    float: right;
-    margin-right: 5%;
+.cont-ul {
+    display: flex;
+    align-items: center;
 }
 
-nav ul li {
-    display: inline-block;
-    line-height: 15vh;
+li {
+    list-style: none;
+    cursor: pointer;
+    padding: 1.5vw;
+    transition:  all .3s ease 0s;
 }
 
-nav ul li a{
-    color: white;
-    font-size: 20px;
-    margin-left: 20px;
-    text-decoration: none;
+li:hover {
+    background-color: #1ba4ff;
+    border-radius: 100px;
+}
+
+.develop {
+    position: relative;
+}
+
+.ul-second {
+    display: none;
+    position: absolute;
+    margin-top: 1.5vw;
+}
+
+.ul-second > li {
+    width: 190px;
+    transform: translateX(-20px);
+    border-bottom:solid 1px #ffffff ;
+    text-align: center;
+    background-color: #3e5bf0;
+}
+
+.ul-second > li:hover {
+    background-color: #02a2ff;
+}
+
+.develop:hover > .ul-second {
+    display: block;
+}
+
+.ul-third {
+    position: absolute;
+    transform: translateX(100%);
+    right: 0;
+    top: 40%;
+    display: none;
+    background-color: #2d4ffa;
+}
+
+.ul-third > li {
+    padding: 1.5vw;
+    border-bottom: solid 1px #fff;
+}
+
+.front:hover > .ul-third {
+    display: block;
+}
+
+@media (max-width:900px) {
+    .logo-danicodex {
+        display: none;
+    }
 }
