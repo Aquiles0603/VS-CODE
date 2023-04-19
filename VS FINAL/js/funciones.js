@@ -43,3 +43,16 @@ function commentBox(){
 	}
  
 }
+
+
+function preguntarNombreyApellido() {
+	var nombre=prompt("Ingrese su nombre:");
+	var apellido=prompt("Ingrese su apellido:");
+	alert (`Bienvenido a VoleyWeb ${nombre} ${apellido}`);
+	}
+
+ 
+function cambiarModo() { 
+		var cuerpoweb = document.body; 
+		cuerpoweb.classList.toggle("oscuro");
+	}
