@@ -16,9 +16,7 @@
 
 <body id="Oscuro2" >
 
-
-
-
+    
     
 
     <nav class="fixed-top">
@@ -78,12 +76,12 @@
     <div class="contentBx">
         <div class="label"><i class="fa-regular fa-image"></i>Galeria</div>
         <div class="content">
-            <img style="cursor: pointer;" src="img/conte-saltando-1170x780.jpg"  alt="" width="200"  height="200"> 
-            <img style="cursor: pointer;" src="img/355941191ea0c7b016472589996c98a7.jpg" alt="" width="200" height="200"> 
-            <img style="cursor: pointer;" src="img/IMG_1988-1170x780.jpg" alt="" width="200" height="200"> 
-            <img style="cursor: pointer;" src="img/sv-3-1170x780.jpg" alt="" width="200" height="200"> 
-            <img style="cursor: pointer;" src="img/7934.png" alt="" width="200" height="200"> 
-            <img style="cursor: pointer;" src="img/1510847987-voleyok-1200x519.jpg" alt="" width="200" height="200">
+            <img style="cursor: pointer;" src="img/conte-saltando-1170x780.jpg"  alt="" width="200"  height="200" onclick="openFulImg(this.src)" alt=""> 
+            <img style="cursor: pointer;" src="img/355941191ea0c7b016472589996c98a7.jpg" alt="" width="200" height="200" onclick="openFulImg(this.src)" alt=""> 
+            <img style="cursor: pointer;" src="img/IMG_1988-1170x780.jpg" alt="" width="200" height="200" onclick="openFulImg(this.src)" alt=""> 
+            <img style="cursor: pointer;" src="img/sv-3-1170x780.jpg" alt="" width="200" height="200" onclick="openFulImg(this.src)" alt=""> 
+            <img style="cursor: pointer;" src="img/7934.png" alt="" width="200" height="200" onclick="openFulImg(this.src)" alt=""> 
+            <img style="cursor: pointer;" src="img/1510847987-voleyok-1200x519.jpg" alt="" width="200" height="200" onclick="openFulImg(this.src)" alt="">
         </div>
     </div>
 </div>
@@ -112,6 +110,11 @@
     </div>
 </div>
 
+
+<div class="ful-img" id="fulImgBox" style="margin-top: 10vh;">
+    <img src="" id="fulImg" alt="">
+    <span onclick="closeImg()">X</span>
+</div>
 
 
 <section>
@@ -280,28 +283,34 @@
 
 
 </section>
-<header style="height: 155px;" data-aos="fade-up">
-    <p class="redes" id="redes" ><strong> VISITANOS TAMBIEN EN </strong></p>
-    
-    <div class="conte">
-        <a href="https://www.facebook.com/" class="facebook" target="_blank">
-            <i class="fa-brands fa-facebook" style="color: #ffffff;"></i>
-        </a>
-        <a href="https://twitter.com/" class="twitter" target="_blank">
-            <i class="fa-brands fa-twitter" style="color: #1fddff;"></i>
-        </a>
-        <a href="https://www.instagram.com/" class="instagram" target="_blank">
-            <i class="fa-brands fa-instagram" style="color:white;"></i>
-        </a>
-        <a href="https://www.youtube.com/" class="youtube" target="_blank">
-            <i class="fa-brands fa-youtube" style="color: #ff0000;"></i>
-        </a>
+
+<footer class="pie-pagina" style="margin-top: 5vh;" data-aos="fade-up" id="redes">
+    <div class="grupo-1">
+        <div class="box">
+            <figure>
+                <a href="#" style="text-decoration: none;">
+                    <img src="img/unnamed.png" alt="Logo"><p class="voley" style="text-align: center;">VoleyWeb</p>
+                </a>
+            </figure>
+        </div>
+        <div class="box">
+            <h2>SEGUINOS TAMBIÉN EN</h2>
+            <div class="red-social">
+                <a href="https://www.facebook.com/" class="fa fa-facebook" class="facebook" target="_blank"></a>
+                <a href="https://www.instagram.com/" class="fa fa-instagram" class="instagram" target="_blank"></a>
+                <a href="https://twitter.com/" class="fa fa-twitter" class="twitter" target="_blank"></a>
+                <a href="https://www.youtube.com/" class="fa fa-youtube" class="youtube" target="_blank"></a>
+            </div>
+        </div>
     </div>
+    <div class="grupo-2">
+        <small>&copy; 2021 <b></b> - Todos los Derechos Reservados.</small>
+    </div>
+</footer>
+    
 
-<p class="redes" id="redes" style="text-align: right;"><strong> @Copyright 2023 •Privacy Policy •Legal </strong></p>
 
 
-</header>
 
 
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
