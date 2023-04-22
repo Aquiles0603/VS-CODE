@@ -44,6 +44,12 @@ function commentBox(){
  
 }
 
+ 
+function cambiarModo() { 
+    var cuerpoweb = document.body; 
+    cuerpoweb.classList.toggle("oscuro"); 
+}
+
 
 function preguntarNombreyApellido() {
 	var nombre=prompt("Ingrese su nombre:");
