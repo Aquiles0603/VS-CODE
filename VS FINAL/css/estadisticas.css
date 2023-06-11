@@ -81,12 +81,11 @@
 }
 
 
-
 .tabla-posiciones {
     background-image: url("../img/canchavoley.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
-    height: 750px;
+    height: 710px;
 }
 
 .titulo-tabla {

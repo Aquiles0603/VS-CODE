@@ -11,7 +11,7 @@
 header{
     background: rgb(34, 34, 245);
     text-align: center;
-    height: 120px;
+    height: 95px;
 }
 
 p{
@@ -19,14 +19,35 @@ p{
     height: 20px;
 }
 
+.galeria{
+    width:100%;
+    height:auto;
+    display: flex;
+    border: 3px solid;
+    margin-top: 1vh;
+    margin-left: -100;
+}
+.galeria img{
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
+    border: solid;
+}
 
+.galeria img:hover{
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
+}
 
 .contenedor{
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 65vh;
 }
 
 .contenedor figure {
@@ -116,12 +137,14 @@ i{
 }
 
 .acordeon{
-    max-width: 800px;
-    position: center;
+    max-width: auto;
+
 }
 .acordeon .contentBx{
+    margin-top: 1vh;
     position: relative;
-    margin: 10px 20px;
+    margin: -3 -1vh 10px 20px;
+    border: 3px solid;
     
 }
 .acordeon .contentBx .label{
@@ -133,7 +156,7 @@ i{
 }
 .acordeon .contentBx .label::before{
     content: '+';
-    position: center;
+
     top: 50%;
     right: 20px;
     transform: translateY(-50%);
