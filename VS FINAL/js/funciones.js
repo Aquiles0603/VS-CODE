@@ -51,11 +51,6 @@ function cambiarModo() {
 }
 
 
-function preguntarNombreyApellido() {
-	var nombre=prompt("Ingrese su nombre:");
-	var apellido=prompt("Ingrese su apellido:");
-	alert (`Bienvenido a VoleyWeb ${nombre} ${apellido}`);
-	}
 
 const fulImgBox = document.getElementById("fulImgBox"),
 	fulImg = document.getElementById("fulImg");

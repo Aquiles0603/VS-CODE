@@ -8,10 +8,11 @@
 }
 
 
-header{
-    background: rgb(34, 34, 245);
+.header1{
+    font-family: 10vh;
     text-align: center;
-    height: 95px;
+    background: #0d2033;
+    height: 80px;
 }
 
 p{
@@ -117,7 +118,7 @@ h3{
     background-repeat: no-repeat;
     background-size: 1400px;
     background-color: rgb(63, 106, 247);
-    border-radius: 30px;
+    border-radius: 25px;
     padding: 20px;
     border-style: solid;
     padding-top: 3vh;
@@ -149,8 +150,8 @@ i{
 }
 .acordeon .contentBx .label{
     position: relative;
-    padding: 10px;
-    background-color: rgb(39, 155, 223);
+    padding: 1px;
+    background-color: #0d2033;
     color: white;
     cursor: pointer;
 }
@@ -202,7 +203,7 @@ i{
 
 .estrellas{
     color: white;
-    padding: 20px;
+    padding: 300px;
     font-size: 25px;
     transition: all ease 500ms;
 }
@@ -254,6 +255,8 @@ input[type="radio"]:checked ~ .label1 {
   }
 .container{
     background: rgb(84, 89, 105);
+    border: 1.5px solid;
+
 }
 
 ::-webkit-scrollbar{
@@ -266,90 +269,115 @@ input[type="radio"]:checked ~ .label1 {
     border-radius: 6px;
 }
 
-nav {
-    width: 100%;
+/* Menu reponsive */
+
+header{
+    background-color: #0d2033;
+    color: #fff;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #1335df;
-    padding-left: 2vw;
-}
-
-.logo-danicodex{
+    padding: .5rem 2rem;
     text-decoration: none;
-    color: #fff;
-    padding-left: 5px;
-    font-size: 35px;
+    font-size: 18px;
 }
-
-.cont-ul {
+.logo-header{
+    text-decoration: none;
+    font-size: 25px;
+}
+.logo-header img{
+    width: 80px;
+    
+}
+.nav-menu ul{
     display: flex;
     align-items: center;
 }
-
-li {
-    list-style: none;
-    cursor: pointer;
-    padding: 1.5vw;
-    transition:  all .3s ease 0s;
-
+.nav-menu li{
+    margin-right: 1rem;
+}
+.nav-menu a{
+    color: #fff;
+    text-decoration: none;
+}
+.nav-menu li:last-child{
+    background:#4ad295;
+    padding: .25rem .75rem;
+    border-radius: .2rem;
+}
+.menu-icon img{
+    width: 30px;
+    height: 30px;
+    border-radius: 1px;
+}
+.menu-icon, #check{
+    display: none;
 }
 
-li:hover {
-    background-color: #1ba4ff;
-    border-radius: 100px;
-}
-
-.develop {
-    position: relative;
-}
-
-.ul-second {
+.ocultar {
     display: none;
     position: absolute;
     margin-top: 1.5vw;
-    right: -25px;
+    left: 25hv;
 }
 
-.ul-second > li {
-    width: 190px;
-    transform: translateX(-20px);
+.ocultar > li {
+    transform: translateY(20px);
     border-bottom:solid 1px #ffffff ;
     text-align: center;
     background-color: #3e5bf0;
+    visibility: hidden; 
+
 }
 
-.ul-second > li:hover {
-    background-color: #02a2ff;
-}
-
-.develop:hover > .ul-second {
+.ocultar:hover li {
     display: block;
+    visibility: visible;
 }
 
-.ul-third {
-    position: absolute;
-    transform: translateX(100%);
-    right: 0;
-    top: 40%;
-    display: none;
-    background-color: #2d4ffa;
-}
+  
 
-.ul-third > li {
-    padding: 1.5vw;
-    border-bottom: solid 1px #fff;
-}
 
-.front:hover > .ul-third {
-    display: block;
-}
 
-@media (max-width:900px) {
-    .logo-danicodex {
-        display: none;
+
+@media (max-width:768px){
+    .checkbtn{
+        display: block;
+    }
+    .menu-icon{
+        display: block;
+        position: fixed;
+        top: -10px;
+        right: 20px;
+        cursor: pointer;
+    }
+    .nav-menu ul{
+        display: block;
+        position: fixed;
+        top:70px;
+        left:-100%;
+        background: #222;
+        width: 100%;
+        height: 100vh;
+        right: 0;
+    }
+    .nav-menu ul li{
+        padding: 2rem;
+        display: flex;
+        justify-content: center;
+        margin: 0;
+    }
+    .nav-menu ul li:last-child{
+        background: none;
+        padding: 1rem;
+    }
+    #check:checked ~ ul{
+        left: 0;
+        transition: all .25s;
     }
 }
+
+
 
 
 
