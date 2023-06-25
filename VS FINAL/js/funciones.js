@@ -62,3 +62,4 @@ const fulImgBox = document.getElementById("fulImgBox"),
 	function closeImg(){
 		fulImgBox.style.display = "none";
 	}
+
