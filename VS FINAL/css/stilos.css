@@ -15,7 +15,7 @@ section [id]{
     font-family: 100px;
     text-align: center;
     background: #0d2033;
-    height: 70px;
+    height: 100px;
     box-shadow: 0px 5px 20px;
 }
 
@@ -279,109 +279,110 @@ input[type="radio"]:checked ~ .label1 {
 /* Menu reponsive */
 
 header{
-    background-color: #0d2033;
-    color: #fff;
+    position: fixed;
+    top: 0; left: 0;right: 0;
+    background: #0d2033;
+    box-shadow: 0 5px 10px rgb(0,0,0,.1);
+    padding: 0px 7%;
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    align-items: center;
-    padding: .5rem 2rem;
-    text-decoration: none;
-    font-size: 18px;
+    z-index: 1000;
 }
-.logo-header{
-    text-decoration: none;
+header .logo{
+    font-weight: bolder;
     font-size: 25px;
+    color: #333;
 }
-.logo-header img{
-    width: 80px;
-    
+header .navbar ul{
+    list-style: none;
 }
-.nav-menu ul{
-    display: flex;
-    align-items: center;
+header .navbar ul li{
+   position: relative;
+   float: left;
+
 }
-.nav-menu li{
-    margin-right: 1rem;
-}
-.nav-menu a{
-    color: #fff;
+header .navbar ul li a{
     text-decoration: none;
-}
-.nav-menu li:last-child{
-    background:#4ad295;
-    padding: .25rem .75rem;
-    border-radius: .2rem;
-}
-.menu-icon img{
-    width: 30px;
-    height: 30px;
-    border-radius: 1px;
-}
-.menu-icon, #check{
-    display: none;
-}
-
-.ocultar {
-    display: none;
-    position: absolute;
-    margin-top: 1.5vw;
-    left: 25hv;
-}
-
-.ocultar > li {
-    transform: translateY(20px);
-    border-bottom:solid 1px #ffffff ;
-    text-align: center;
-    background-color: #3e5bf0;
-    visibility: hidden; 
-
-}
-
-.ocultar:hover li {
+    font-size: 15px;
+    padding: 20px;
+    color: #ffffff;
     display: block;
-    visibility: visible;
+}
+header .navbar ul li a:hover{
+    background: #333;
+    color: #fff;
 }
 
-  
+header .navbar ul li ul{
+    position: absolute;
+    left: 0;
+    width: 200px;
+    background: #0d2033;
+    display: none;
+}
+header .navbar ul li ul li{
+    width: 100%;
+    border-top: 1px solid rgb(0,0,0,.1);
+}
+header .navbar ul li ul li ul{
+    left: 150px;
+    top:0;
+}
 
+header .navbar ul li:hover > ul{
+    display: initial;
+}
+#menu-bar{
+    display: none;
+}
+header label{
+    font-size: 20px;
+    color: #333;
+    cursor: pointer;
+    display: none;
+}
 
-
-
-@media (max-width:768px){
-    .checkbtn{
-        display: block;
+@media(max-width:991px){
+    header{
+        padding: 20px;
     }
-    .menu-icon{
-        display: block;
-        position: fixed;
-        top: -10px;
-        right: 20px;
-        cursor: pointer;
+
+    header label{
+        display: initial;
     }
-    .nav-menu ul{
-        display: block;
-        position: fixed;
-        top:70px;
-        left:-100%;
-        background: #222;
+
+    header .navbar{
+        position: absolute;
+        top: 100%; left: 0;  right: 0;
+        background: #0d2033;
+        border-top: 1px solid rgb(0,0,0.1);
+        display: none;
+    }
+
+    header .navbar ul li{
         width: 100%;
-        height: 100vh;
-        right: 0;
     }
-    .nav-menu ul li{
-        padding: 2rem;
-        display: flex;
-        justify-content: center;
-        margin: 0;
+
+    header .navbar ul li ul{
+        position: relative;
+        width: 100%;
     }
-    .nav-menu ul li:last-child{
-        background: none;
-        padding: 1rem;
+
+    header .navbar ul li ul li{
+        background: #0d2033;
+
     }
-    #check:checked ~ ul{
+
+    header .navbar ul li ul li ul{
+        width: 100%;
         left: 0;
-        transition: all .25s;
     }
+
+    #menu-bar:checked ~ .navbar{
+        display: initial;
+    }
+
 }
 
 

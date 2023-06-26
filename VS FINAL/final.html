@@ -17,37 +17,53 @@
 
 <body id="Oscuro2" >
 
-    <header class="fixed-top" class="header" >
-        <div class="logo-header">
-        <a href="#"  style="color: #ffffff; text-decoration: none;" ><img src="img/unnamed.png" alt="Logo" height="80" >VoleyWeb</a>
-        </div>
-        <div class="nav-menu">
-            <input type="checkbox" id="check">    
-            <label for="check" class="checkbtn">
-                <i class="menu-icon"><img src="./img/icons8-menú-50.png" alt=""></i>
-            </label>
+    <header>
+        <a href="#" class="logo" style="color: #ffffff; text-decoration: none;" ><img src="img/unnamed.png" alt="Logo" height="80" >VoleyWeb</a>
+        
+
+
+        <input type="checkbox" id="menu-bar">
+        <label for="menu-bar"><i class="menu-icon"><img src="./img/icons8-menú-50.png" alt=""></i></label>
+
+        <nav class="navbar">
             <ul>
                 <li><a href="#"> <img src="img/homa.png" style="margin-left: 10px;">Inicio</a></li>
-                <li><a href="#clubes"> <img src="img/escudo.png">Equipos</a></li>
-                <li><a href="estadisticas.html"> <img src="img/estadistica.png">Estadisticas</a></li>
-                <li><a href="#noticias"> <img src="img/noticias.png">Noticias</a></li>
-                <li><a href="#redes"> <img src="img/como.png">Redes Sociales</a></li>
-                <li><a href=""> <img src="img/engranaje.png">Opciones</a>
-                    <ul class="ocultar">
-                        <li class="back"><button type="button" class="btn btn-dark" onclick="cambiarModo()">Oscuro / Claro</button></li>
+                <li><a href="#clubes"><img src="img/escudo.png">Equipos</a></li>
+                <li><a href=""><img src="img/estadistica.png">Estadisticas</a>
+                    <ul>
+                        <li><a href="./estadisticas.html">Lista de equipos</a></li>
+                        <li><a href="">Lista de jugadores</a>
+                            <ul>
+                                <li><a href="./ciudad.html">Ciudad</a></li>
+                                <li><a href="./upcn.html">UPCN</a></li>
+                                <li><a href="./monteros.html">Monteros</a></li>
+                                <li><a href="./paracao.html">Paracao</a></li>
+                                <li><a href="./defensores.html">Defensores</a></li>
+                            </ul>
+                        </li>
                     </ul>
                 </li>
-                    
-                <li><a href="inciar.html">Iniciar Sesion</a></li>
+                
+                <li><a href="#noticias"><img src="img/noticias.png">Noticias</a></li>
+                <li><a href="#redes"><img src="img/como.png">Redes Sociales</a></li>
+                <li><a href=""><img src="img/engranaje.png">Opciones</a>
+                    <ul>
+                        <li class="back"><button type="button" class="btn btn-dark" onclick="cambiarModo()">Oscuro / Claro</button></li>
+                        <li><a href="./inciar.html">Iniciar Sesion</a></li>
+                    </ul>
+                </li>
+
             </ul>
-        </div>
+
+        </nav>
+
     </header>
  
 <section>
 
 
 
-<div data-aos="fade-up" style="margin-top: 17vh;">
+<div data-aos="fade-up" style="margin-top: 20vh;">
     <h3 id="#" style="margin-top: 3vh;">
         ¡BIENVENIDOS!
     </h3>
@@ -276,7 +292,7 @@
 
 
 <section id="imgScroll" style="margin-top: 7vh;" >
-<header class="header1" data-aos="fade-up">
+<h3 class="header1" data-aos="fade-up">
     <p class="estrellas">¿Qué tal tu experiencia? Deja un comentario</p>
     <form>
         <p class="clasificacion">
@@ -293,7 +309,7 @@
         </p>
       </form>
 
-</header>
+</h3>
 
 
 
