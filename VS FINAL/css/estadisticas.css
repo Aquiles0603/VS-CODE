@@ -82,10 +82,11 @@
 
 
 .tabla-posiciones {
+    width: auto;
     background-image: url("../img/canchavoley.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
-    height: 710px;
+
 }
 
 .titulo-tabla {
@@ -116,28 +117,30 @@
 }
 
 table {
-    width: 100%;
+    width: auto;
     margin-top: 20px;
     color: white;
 }
 
 .encabezados {
+    width: auto;
     filter: opacity(0.8);
     background: linear-gradient(90deg, #003fbb 0%, #0077ee 35%, #009ce3 100%);
 }
 
 table, th, td {
+    width: auto;
     border-collapse: collapse;
     text-align: center;
   }
 
   th {
-      padding: 5px;
-      padding-top: 10px;
-      padding-bottom: 10px;
-      font-family: 'Kanit', sans-serif;
-      border-bottom: 3px solid #2592c4;
-      text-align: center;
+    padding: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: 'Kanit', sans-serif;
+    border-bottom: 3px solid #2592c4;
+    text-align: center;
   }
 
   .bandera {
@@ -161,12 +164,14 @@ table, th, td {
   }
 
 .paginacion {
-    height: 45px;
+    width: auto;
+    height: auto;
     background-color: #003fbb;
     background-repeat: none;
 }
 
 .paginacion ul {
+    width: auto;
 	list-style:none;
 	text-align: center;
 }

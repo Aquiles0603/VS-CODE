@@ -10,6 +10,61 @@
 
 
 
+
+
+
+
+.banner{
+	width: 100%;
+	height: 600px;
+	animation: banner 10s infinite linear alternate;
+	background-size: 100% 100%;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+@keyframes banner{
+	0%, 20%{
+		background-image: url("https://e1.pxfuel.com/desktop-wallpaper/949/15/desktop-wallpaper-volleyball-backgrounds-volleyball.jpg");
+	}
+	25%, 45%{
+		background-image: url("https://e1.pxfuel.com/desktop-wallpaper/354/935/desktop-wallpaper-volleyball-backgrounds-for-computer-volleyball-aesthetic.jpg");
+	}
+	50%, 70%{
+		background-image: url("https://p4.wallpaperbetter.com/wallpaper/531/64/975/beach-sunset-volleyball-wallpaper-preview.jpg");
+	}
+	75%, 100%{
+		background-image: url("https://integralspor.com/uploads/blog/detail/1618e792d4b1254221.jpg");
+	}
+}
+.capa{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,0.6);
+}
+.info{
+	z-index: 1;
+	width: 100%;
+	max-width: 550px;
+	text-align: center;
+}
+.info h2{
+	font-size: 45px;
+	margin-bottom: 20px;
+	letter-spacing: 1px;
+}
+.info p{
+	color: #ffffff;
+	line-height: 2;
+	margin-bottom: 30px;
+}
+
+/* a */
+
 section [id]{
     scroll-margin-top: 100px;
 }
@@ -479,20 +534,7 @@ header label{
 
 }
 
-h1::before{
-    content: "";
-    display: block;
-    width: 100%;
-    height: 2px;
-    position: absolute;
-    background-color: black;
-    top: 50%;
-    z-index: -1;
-}
-h1 span{
-    background-color:#ecf4fb;
-    padding: 0 15px;
-}
+
 .img-gallery{
     width: 80%;
     margin: 50px auto 50px;
