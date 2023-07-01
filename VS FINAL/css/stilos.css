@@ -7,6 +7,9 @@
     text-decoration: none;
 }
 
+
+
+
 section [id]{
     scroll-margin-top: 100px;
 }
@@ -173,7 +176,6 @@ i{
 }
 .acordeon .contentBx .label::before{
     content: '+';
-
     top: 50%;
     right: 20px;
     transform: translateY(-50%);
@@ -362,6 +364,7 @@ header label{
     }
 
     header .navbar{
+        text-align: center;
         position: absolute;
         top: 100%; left: 0;  right: 0;
         background: #0d2033;
@@ -600,16 +603,16 @@ h1 span{
 	height: 210px;
 }
 .card .contenido-card{
-	padding: 15px;
+	padding: auto;
 	text-align: center;
 }
 .card .contenido-card h4{
     
-	margin-bottom: 15px;
+	margin-bottom: auto;
 	color: #000000;
 }
 .card .contenido-card p{
-    height: 115vh;
+    height: auto;
 	line-height: 1.8;
 	color: #000000;
 	font-size: 14px;
