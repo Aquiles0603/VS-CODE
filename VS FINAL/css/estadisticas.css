@@ -83,7 +83,7 @@
 
 .tabla-posiciones {
     width: auto;
-    background-image: url("../img/canchavoley.jpg");
+    background-color: #0d2033;
     background-repeat: no-repeat;
     background-size: 100%;
 
@@ -117,7 +117,7 @@
 }
 
 table {
-    width: auto;
+    width: 100%;
     margin-top: 20px;
     color: white;
 }
@@ -129,7 +129,7 @@ table {
 }
 
 table, th, td {
-    width: auto;
+    width: auto 100%;
     border-collapse: collapse;
     text-align: center;
   }
