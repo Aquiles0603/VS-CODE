@@ -82,7 +82,7 @@
 
 
 .tabla-posiciones {
-    width: auto;
+    width: auto 100%;
     background-color: #0d2033;
     background-repeat: no-repeat;
     background-size: 100%;
@@ -146,6 +146,9 @@ table, th, td {
   .bandera {
       width: 50px;
   }
+
+
+
 
   .button-jp {
         border-radius: 5px;
